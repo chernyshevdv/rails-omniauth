@@ -10,6 +10,6 @@ class Moviegoer < ApplicationRecord
   end
 
   def to_s
-    uid()
+    name()
   end
 end
