@@ -13,7 +13,6 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    byebug
     session.delete(:user_id)
     flash[:notice] = 'Logged out successfully'
     redirect_to movies_path
