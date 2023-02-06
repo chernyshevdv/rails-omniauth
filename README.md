@@ -23,7 +23,23 @@ Add the following routes to [routes.rb](config/routes.rb):
 ```
 
 ## OmniAuth configuration
+### config
 Setup [config/initialize/omniauth.rb](config/initialize/omniauth.rb)
+
+### Set up Twitter app
+To use Twitter as authenticator, you need to set up an at [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard).
+Ensure you configure authentication settings:
+
+
+### OS environment variables
+Put Twitter secrets into OS environment variables:
+```sh
+export OMNIAUTH_PROVIDER_KEY="...key..."
+export OMNIAUTH_PROVIDER_SECRET="...secret..."
+```
+
+### secrets.yml
+Create [secrets.yml](config/secrets.yml)
 
 ## Database creation
 ```
@@ -33,7 +49,7 @@ rake db:migrate
 ```
 
 * Database initialization
-use (db/seeds.rb) file and initiate the command:
+use [db/seeds.rb](db/seeds.rb) file and initiate the command:
 ```
 rake db:seed
 ```
