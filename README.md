@@ -39,10 +39,13 @@ export OMNIAUTH_PROVIDER_KEY="...key..."
 export OMNIAUTH_PROVIDER_SECRET="...secret..."
 ```
 
-### secrets.yml
-Create [secrets.yml](config/secrets.yml)
+### Create files
+* [secrets.yml](config/secrets.yml)
+* [SessionController](app/controllers/session_controller.rb)
+* [Application Controller](app/controllers/application_controller.rb)
+* [Moviegoer model](app/models/moviegoer.rb)
 
-### Create [SessionController](app/controllers/session_controller.rb)
+### Modify some more files
 
 
 ## Database creation
