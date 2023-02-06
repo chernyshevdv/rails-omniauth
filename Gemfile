@@ -14,6 +14,10 @@ gem 'sass-rails', '>= 6'
 gem 'bootstrap-sass'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+#
+# OmniAuth
+gem 'omniauth'
+gem 'omniauth-twitter'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
