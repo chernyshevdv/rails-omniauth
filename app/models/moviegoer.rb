@@ -3,6 +3,10 @@ class Moviegoer < ApplicationRecord
     Moviegoer.create!(
       :provider => auth['provider'],
       :uid => auth['uid'],
-      :name => auth['info']['name'])
+      :name => auth[:extra][:access_token].params[:screen_name])
+  end
+
+  def to_s
+    uid()
   end
 end

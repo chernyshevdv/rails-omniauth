@@ -16,7 +16,7 @@ gem 'bootstrap-sass'
 # gem 'bcrypt', '~> 3.1.7'
 #
 # OmniAuth
-gem 'omniauth'
+gem 'omniauth','~> 1.9'
 gem 'omniauth-twitter'
 
 group :development, :test do
