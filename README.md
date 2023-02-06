@@ -29,6 +29,7 @@ Setup [config/initialize/omniauth.rb](config/initialize/omniauth.rb)
 ### Set up Twitter app
 To use Twitter as authenticator, you need to set up an at [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard).
 Ensure you configure authentication settings:
+![image](https://user-images.githubusercontent.com/1935211/217080572-d08717c3-fc6c-44d7-a5fa-b9f3894ce540.png)
 
 
 ### OS environment variables
@@ -40,6 +41,9 @@ export OMNIAUTH_PROVIDER_SECRET="...secret..."
 
 ### secrets.yml
 Create [secrets.yml](config/secrets.yml)
+
+### Create [SessionController](app/controllers/session_controller.rb)
+
 
 ## Database creation
 ```
