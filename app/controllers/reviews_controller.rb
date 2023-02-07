@@ -19,7 +19,10 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    @current_user.reviews << @movie.reviews.build(params[:review])
+	params.permit!
+	p = params[:review]
+	r = @movie.reviews.build(p)
+    @current_user.reviews << r
     redirect_to movie_path(@movie)
   end
 

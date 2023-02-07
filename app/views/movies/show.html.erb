@@ -1,0 +1,25 @@
+<h2><%= @movie.title %></h2>
+<table class="table table-striped col-md-12" id="movie">
+	<tbody>
+		<tr>
+			<td><b>Release date:</b></td>
+			<td><%= @movie.release_date %></td>
+		</tr>
+		<tr>
+			<td><b>Rating:</b></td>
+			<td><%= @movie.rating %></td>
+		</tr>
+	</tbody>
+</table>
+<h3>Reviews:</h3>
+<table class="table table-striped col-md-12" id="reviews">
+	<thead>
+		<th>Moviegoer</th>
+		<th>Potatoes</th>
+	</thead>
+	<tbody>
+<% @movie.reviews.each do |review| %>
+	<%= render 'reviews/tr', review: review %>
+<% end %>
+	</tbody>
+</table>
