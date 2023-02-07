@@ -3,7 +3,7 @@
 	<tbody>
 		<tr>
 			<td><b>Release date:</b></td>
-			<td><%= @movie.release_date %></td>
+			<td><%= @movie.year%></td>
 		</tr>
 		<tr>
 			<td><b>Rating:</b></td>
@@ -23,3 +23,4 @@
 <% end %>
 	</tbody>
 </table>
+<%= link_to "Write a review", new_movie_review_path(@movie) %>

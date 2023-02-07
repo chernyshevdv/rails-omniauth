@@ -5,4 +5,8 @@ class Movie < ApplicationRecord
   def to_s
     "#{title} (#{release_date}): #{rating}"
   end
+
+  def year
+	release_date.strftime("%Y")
+  end
 end
