@@ -5,6 +5,7 @@
     <title>Rotten Potatoes!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <%= csrf_meta_tags %>
+	<%= javascript_include_tag 'application' %>
   </head>
   <body>
     <%# These classes come from the Bootstrap CSS framework. %>
@@ -27,7 +28,9 @@
       <main id="main">
         <%= yield %>
       </main>
-      <b>user: <%= @current_user %></b>
+      <footer>
+		<b>user: <%= @current_user %></b>
+	  </footer>
     </div>
   </body>
 </html>
