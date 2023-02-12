@@ -1,9 +1,9 @@
 <!--  This file is app/views/movies/index.html.erb -->
 <h2>All Movies</h2>
 
-<table class="table table-striped col-md-12" id="movies">
+<table class="table table-striped" id="movies">
   <thead>
-    <tr>
+	<tr>
       <th>
         Title
       </th>
@@ -13,11 +13,11 @@
       <th>
         Release Dtae
       </th>
-    </tr>
+	</tr>
   </thead>
   <tbody>
     <% @movies.each do |movie| %>
-      <tr>
+      <tr class="<%= ('adult' unless movie.rating =~ /^G|PG$/) %>">
         <td>
           <%= link_to movie.title, movie_path(movie) %>
         </td>
