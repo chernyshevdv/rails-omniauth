@@ -1,0 +1,13 @@
+<table class="table table-striped col-md-12" id="reviews">
+    <thead>
+        <th>Moviegoer</th>
+        <th>Potatoes</th>
+    </thead>
+    <tbody>
+<% movie.reviews.each do |review| %>
+    <%= render 'reviews/tr', review: review %>
+<% end %>
+    </tbody>
+</table>
+<%= link_to 'Edit movie', edit_movie_path(movie), :class => 'btn btn-primary' %>
+<%= link_to 'Close', '', :id => 'closeLink', :class => 'btn btn-secondary' %>
